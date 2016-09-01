@@ -5,13 +5,13 @@
     android:layout_height="match_parent"
     tools:context="com.hq.project1.MainActivity">
 
-    <ImageView
-        android:src="@drawable/coffee"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="0dp"
-        android:scaleType="centerCrop"
-        />
+    <!--<ImageView-->
+        <!--android:src="@drawable/coffee"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:padding="0dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--/>-->
 
     <TextView
         android:id="@+id/text_hello"
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:textAppearance="?android:textAppearanceLarge"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textStyle="bold" 
         android:text="Hello World!" 
         android:paddingTop="@dimen/activity_vertical_margin"
@@ -33,7 +33,7 @@
         android:layout_centerHorizontal="true"
         android:text="@string/price"
         android:textAppearance="?android:textAppearanceLarge"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textStyle="bold" 
         android:paddingTop="@dimen/activity_vertical_margin"
         />
@@ -46,7 +46,7 @@
         android:layout_centerHorizontal="true"
         android:text="@string/price_val"
         android:textAppearance="?android:textAppearanceLarge"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textStyle="bold" 
         android:paddingTop="@dimen/activity_horizontal_margin"
         />
@@ -59,7 +59,7 @@
         android:layout_centerHorizontal="true"
         android:text="@string/order"
         android:textAppearance="?android:textAppearanceLarge"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textStyle="bold" 
         android:paddingTop="@dimen/activity_vertical_margin"
         />
