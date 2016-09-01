@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hq.project1.MainActivity">
+
+    <ImageView
+        android:src="@drawable/coffee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/text_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" 
+        android:text="Hello World!" 
+        android:paddingTop="@dimen/activity_vertical_margin"
+        />
+
+      <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_hello"
+        android:layout_centerHorizontal="true"
+        android:text="@string/price"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" 
+        android:paddingTop="@dimen/activity_vertical_margin"
+        />
+
+      <TextView
+        android:id="@+id/text_price_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_price"
+        android:layout_centerHorizontal="true"
+        android:text="@string/price_val"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" 
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        />
+
+    <TextView
+        android:id="@+id/text_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_price_val"
+        android:layout_centerHorizontal="true"
+        android:text="@string/order"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" 
+        android:paddingTop="@dimen/activity_vertical_margin"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_order_quantity"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_type"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/order_qty"
+        android:inputType="number" 
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        />
+        android:onClick="OrderQtyAction"
+
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/plus"
+        android:layout_below="@+id/edit_text_order_quantity"
+        android:layout_alignLeft="@+id/edit_text_order_quantity"
+        android:layout_alignStart="@+id/edit_text_order_quantity"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="AddBtnAction"
+        />
+
+      <Button
+        android:id="@+id/button_minus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit_text_order_quantity"
+        android:layout_alignRight="@+id/edit_text_order_quantity"
+        android:layout_alignEnd="@+id/edit_text_order_quantity"
+        android:text="@string/minus"
+        android:onClick="SubBtnAction"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        />
+
+      <TextView
+        android:id="@+id/text_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_plus"
+        android:layout_centerHorizontal="true"
+        android:text="@string/total"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000000"
+        android:textStyle="bold" 
+        android:paddingTop="@dimen/activity_vertical_margin"
+        />
+
+      <TextView
+        android:id="@+id/text_total_amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_total"
+        android:layout_centerHorizontal="true"
+        android:text="@string/total_qty"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000000"
+        android:textStyle="bold" 
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        />
+
+</RelativeLayout>

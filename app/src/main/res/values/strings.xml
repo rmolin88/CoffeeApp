@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="order">Order Quantity</string>
+    <string name="total">Total Amount of Money</string>
+    <string name="type">Type of Coffe</string>
+    <string name="order_qty">0</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="total_qty">$0</string>
+    <string name="price">Price per cup of coffee</string>
+    <string name="price_val">$2</string>
+</resources>
